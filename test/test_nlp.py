@@ -192,6 +192,7 @@ class AnswerEquivalenceEvaluator:
                 padding="longest",
                 truncation=True,
                 return_tensors="pt",
+                add_special_tokens=False,
             ).to(self.device)
 
             logits = self.model(**encoding).logits
