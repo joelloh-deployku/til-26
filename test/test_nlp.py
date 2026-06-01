@@ -117,7 +117,10 @@ class AnswerEquivalenceEvaluator:
 
         # truncate to required max length, then re-encode as text
         tokens = self.tokenizer.tokenize(
-            _printable, max_length=MAX_CANDIDATE_TOKEN_LENGTH, truncation=True
+            _printable,
+            max_length=MAX_CANDIDATE_TOKEN_LENGTH,
+            truncation=True,
+            add_special_tokens=False,
         )
         reconstructed_candidate = self.tokenizer.convert_tokens_to_string(tokens)
 
