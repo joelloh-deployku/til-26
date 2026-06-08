@@ -1,4 +1,5 @@
-# Dependencies for AE.
-
+# Dependencies for AE inference.
 fastapi
 uvicorn[standard]
+numpy
+torch
