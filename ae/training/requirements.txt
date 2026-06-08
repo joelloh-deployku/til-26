@@ -1,0 +1,8 @@
+torch
+numpy
+tqdm
+matplotlib
+pettingzoo
+supersuit
+gymnasium
+omegaconf
